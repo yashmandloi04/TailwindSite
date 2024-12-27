@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+  <div class="relative bg-gradient-to-br from-white to-gray-300">
+    <!-- bubble left decoration -->
+    <div class="hidden lg:inline-block absolute transform translate-y-4">
+      <div class="absolute bg-teal-100 w-64 h-64 rounded-full top-0 left-0 opacity-50 "></div>
+      <div class="absolute bg-red-100 w-64 h-64 rounded-full top-0 left-0 opacity-50 ml-20"></div>
+      <div class="absolute bg-purple-100 w-64 h-64 rounded-full top-0 left-0 opacity-50 ml-10 mt-20"></div>
+    </div>
+
+    <!-- Bubble for small screens -->
+    <div class="inline-block lg:hidden absolute transform translate-y-16 translate-x-4">
+      <div class="absolute bg-teal-300 w-24 h-24 rounded-full top-0 left-0 opacity-25"></div>
+      <div class="absolute bg-red-300 w-24 h-24 rounded-full top-0 left-0 opacity-25 ml-20 transform translate-y-4 translate-x-9"></div>
+      <div class="absolute bg-purple-100 w-20 h-20 rounded-full top-0 left-0 opacity-50 ml-10 mt-20 transform -translate-y-8"></div>
+    </div>
+
+    <!-- bubble right decoration -->
+    <div class="hidden lg:inline-block absolute top-40 right-2 transform  -translate-x-16 translate-y-36">
+      <div class="absolute bg-teal-200 w-64 h-64 rounded-full top-0 right-0 mr-10 opacity-25 transform -translate-x-10">
+      </div>
+      <div class="absolute bg-red-200 w-64 h-64 rounded-full top-0 right-0 opacity-25"></div>
+      <div class="absolute bg-purple-200 w-64 h-64 rounded-full top-0 right-0 mt-20 mr-5 opacity-25"></div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- header section ============ -->
+    <!-- =========================== -->
+    <div class="hidden sm:block relative w-full min-h-fit py-5 text-gray-500">
+      <div class="container mx-auto px-10 flex justify-between items-center text-sm">
+        <div class="space-x-4 flex items-center">
+          <a class="font-bold text-2xl text-teal-900" href="#">Beginner Tailwind</a>
+          <a class="hidden sm:inline-block hover:underline hover:text-gray-900" href="#about">About</a>
+          <a class="hidden sm:inline-block hover:underline hover:text-gray-900" href="#learn">What You'll learn</a>
+          <a class="hidden sm:inline-block hover:underline hover:text-gray-900" href="#pricing">Pricing</a>
+          <a class="hidden sm:inline-block hover:underline hover:text-gray-900" href="#faq">FAQ</a>
+        </div>
+
+        <!-- header signup -->
+
+        <div class="space-x-4 flex items-center">
+          <a class="hidden sm:inline-block hover:underline hover:text-gray-900" href="#">Login</a>
+          <a class="inline-block p-2 bg-purple-300 rounded text-purple-500 text-center font-bold hover:shadow-xl hover:bg-purple-200 hover:text-purple-400 transition duration-500"
+            href="#">Get the Course</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- =========================== -->
+    <!-- hero section ============ -->
+    <!-- =========================== -->
+    <div class="relative py-36 lg:py-24">
+      <!-- Purple bar for transition -->
+      <div class="absolute bottom-0 inset-x-0 h-44 bg-purple-700"></div>
+      <div class="relative container px-10 mx-auto text-center">
+        <!-- hero title -->
+
+        <h1 class="text-5xl lg:text-6xl font-extrabold mb-2">
+          <span class="inline-block h-14 sm:h-18 bg-gradient-to-r from-teal-300 to-purple-400 text-transparent bg-clip-text">Beginner</span>
+          <span
+            class="inline-block bg-gradient-to-r from-purple-400 via-teal-400 to-purple-700 text-transparent bg-clip-text">Tailwind</span>
+        </h1>
+
+        <!-- hero descr -->
+
+        <p class="lext-xl lg:text-2xl mb-10 text-gray-700">Make good looking designs quickly. All without a single line
+          of custom
+          CSS.</p>
+
+        <a class="inline-block mb-32 py-3 px-12 font-bold tracking-wide bg-gradient-to-br from-purple-400 to-purple-700 hover:to-purple-600 text-purple-100 hover:text-white rounded shadow hover:shadow-xl transition duration-500"
+          href="#">Get the Course</a>
+
+        <!-- teaser image -->
+
+        <div class="relative flex-col">
+          <img class="m-0 p-0 rounded-lg shadow-2xl border-4 border-purple-400 bg-contain"
+            src="../Images/begginer_tailwind_hero.png" alt="Hero image">
+
+          <!-- teaser image info box -->
+          <div
+            class="md:absolute md:top-0 md:right-0 w-full p-4 mt-5 md:mt-0 md:w-1/2 sm:py-3 lg:px-2 bg-yellow-100 md:translate-x-2 md:-translate-y-2 rounded border-t-4 border-yellow-400 text-yellow-700">
+            <p><strong class="font-bold">We'll create BeginnerTailwind.com</strong><span class="font-bold opacity-50">
+                (it's the site you're on now)</span></p>
+            <p>We'll do it all without a single line of custom CSS!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================== -->
+  <!-- overview section ============ -->
+  <!-- =========================== -->
+  <div id="about" class="relative w-full min-h-fit bg-purple-700 py-20">
+    <!-- Gray bar for transition -->
+    <div class="absolute bottom-0 inset-x-0 h-56 bg-gray-300"></div>
+    <div class="relative container px-10 mx-auto space-y-7">
+      <div class="text-3xl sm:text-4xl lg:text-6xl px-2 lg:px-0 text-purple-100 font-bold">
+        <h2>Writing CSS is tough stuff!</h2>
+      </div>
+      <div class="lg:flex lg:space-x-16">
+        <div
+          class="relative lg:w-2/3 mb-10 lg:mb-0 p-6 lg:py-16 lg:px-24 bg-white rounded-lg shadow-2xl text-lg lg:text-xl space-y-10 leading-8 lg:leading-10 tracking-tight lg:tracking-relaxed text-justify text-gray-800">
+          <p>Tailwind makes writing CSS easier and lets us customize our designs faster than any other CSS framework. If
+            you want a CSS framework that has pre-built components, then Tailwind may not be for you. If you want a CSS
+            framework that lets you design quickly and customize your site, then <strong
+              class="font-bold text-teal-500">Tailwind is gonna be a lot of fun.</strong></p>
+          <p>
+            After using Bulma to build <a href="#" class="text-blue-400 hover:underline">Scotch.io</a>, my CSS files
+            became littered with my own <code
+              class="text-sm p-1 bg-gray-200 text-red-500 font-mono rounded">!important</code> classes to override the
+            framework's styles. Tailwind doesn't have the <code
+              class="text-sm p-1 bg-gray-200 text-red-500 font-mono rounded">!important</code> problem since all our
+            elements are designed on the fly.
+            <strong class="font-bold">Important Note:</strong> Tailwind lets us design quickly, but this doesn't mean
+            that you don't need CSS knowledge however. To use Tailwind, you need to have a good understanding of CSS
+            properties. In this course, <strong class="font-bold">we will learn Tailwind and we'll also learn CSS
+              concepts</strong> to create good looking designs. <strong class="font-bold">Tailwind is the ultimate CSS
+              shorthand</strong>, but we still need to learn the CSS, which we'll do in this course.
+          </p>
+          <p class="relative text-3xl italic">
+            <span
+              class="absolute left-0 top-0 text-6xl text-purple-600 opacity-50 transform -translate-y-6 -translate-x-6">"</span>
+            This isn't just a Tailwind course. This is also a "learn how to design with CSS" course.
+          </p>
+          <p>
+            The hardest things about learning Tailwind is memorizing the classes and also knowing which classes go well
+            together. We'll be writing a lot of Tailwind in this course so that the repetition will help us commit
+            Tailwind classes to memory.
+          </p>
+        </div>
+        <div class="flex-grow italic text-lg text-purple-200 space-y-6">
+          <p class="p-10 bg-purple-800 rounded-lg">
+            What classes should I use?
+          </p>
+          <p class="p-10 bg-purple-800 rounded-lg">
+            How do I make things look good?
+          </p>
+          <p class="p-10 bg-purple-800 rounded-lg">
+            My design looks basic?
+          </p>
+          <p class="p-10 bg-purple-800 rounded-lg">
+            How do I do responsive?
+          </p>
+          <p class="p-10 bg-purple-800 rounded-lg">
+            Why does my typography look so bad?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================== -->
+  <!-- video section ============ -->
+  <!-- =========================== -->
+  <div class="w-full min-h-full py-24 bg-gray-300">
+    <div class="container mx-auto px-10 space-y-7">
+      <div class="space-y-7 text-lg lg:text-xl">
+        <h3 class="text-3xl lg:text-6xl text-center font-bold text-teal-800">A Tailwind Video I've Done</h3>
+        <p>
+          Hey there! My name is <span class="text-blue-500 hover:underline hover:cursor-pointer">Chris Sev</span> and I
+          founded a web dev tutorial site <span
+            class="text-blue-500 hover:underline hover:cursor-pointer">Scotch.io.</span> We were able to grow to 4M
+          monthly pageviews and $300,000 yearly revenue. Scotch.io was acquired by <span
+            class="text-blue-500 hover:underline hover:cursor-pointer">DigitalOcean</span> in November 2019. Nowadays
+          I'm in search of the best ways to develop and design a business. Hope you enjoy this course and my other one
+          <span class="text-blue-500 hover:underline hover:cursor-pointer">MakeReactApps.com</span>.
+        </p>
+      </div>
+      <div class="lg:flex lg:justify-between space-y-5 lg:space-y-0">
+        <div class="border-2 border-black rounded-lg">
+          <p class="p-4 lg:p-7">I did a Build Your 1st Tailwind Site for Traversy Media on YouTube also.</p>
+          <iframe class="w-full rounded-b-lg" width="560" height="315"
+            src="https://www.youtube.com/embed/wEM5NdJ-8HY?si=VyLK-S7wSAZ6XX1Z" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="border-2 border-black rounded-lg">
+          <p class="p-4 lg:p-7">I did a Build Your 1st Tailwind Site for Traversy Media on YouTube also.</p>
+          <iframe class="w-full rounded-b-lg" width="560" height="315"
+            src="https://www.youtube.com/embed/wEM5NdJ-8HY?si=VyLK-S7wSAZ6XX1Z" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================== -->
+  <!-- "What you will learn in this course" section ============ -->
+  <!-- =========================== -->
+  <div id="learn" class="py-32 bg-gray-200 text-gray-700">
+    <div class="container mx-auto px-10">
+      <div class="relative space-x-4 lg:ive">
+        <!-- gradient left strip -->
+        <div
+          class="absolute left-0 top-0 h-2 w-1/3 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 transform -translate-y-2.5">
+        </div>
+
+        <h3 class="mb-32 text-center text-3xl lg:text-6xl font-bold text-purple-900">What you'll learn in this course
+        </h3>
+        <!-- gradient right strip -->
+        <div>
+          <div
+          class="absolute right-0 bottom-0 h-2 w-1/3 rounded-full bg-gradient-to-r from-purple-500 to-blue-400 transform translate-y-4">
+        </div>
+      </div>
+    </div>
+      <!-- grid section -->
+      <div class="lg:grid lg:grid-cols-6 lg:gap-10 space-y-4 lg:space-y-0">
+        <div class="col-span-2 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-2 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-2 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-3 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-3 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-2 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-2 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-2 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-2 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-2 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+        <div class="col-span-2 border-2 border-gray-700 rounded">
+          <div class="relative flex justify-between border-b-2 border-gray-700">
+            <h4 class="p-4 lg:text-lg font-bold">How to use Tailwind classes</h4>
+            <!-- red yellow green fun dots -->
+            <div class="absolute right-2 lg:right-5 flex mt-5 h-6 w-14 space-x-2 py-1">
+              <div class="h-3 w-3 bg-red-500 rounded-full"></div>
+              <div class="h-3 w-3 bg-yellow-400 rounded-full"></div>
+              <div class="h-3 w-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          <p class="p-4">We'll dive into the most important Tailwind classes and use them a TON.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- =========================== -->
+  <!-- what we'll build in this course section ============ -->
+  <!-- =========================== -->
+  <div class="py-14 lg:py-32 bg-gray-300">
+    <div class="container mx-auto px-10 text-center">
+      <h4 class="text-3xl lg:text-5xl">What we'll build in this course</h4>
+      <p class="text-lg py-6">These components are things you'll have to create in every project.</p>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-10">
+        <div class="flex bg-white rounded shadow-2xl hover:transform hover:scale-105 duration-200 ease-in">
+          <div class="w-1/4 py-2 bg-teal-500 rounded-l text-3xl text-center">😍</div>
+          <div class="p-4">
+            <h5>Button</h5>
+          </div>
+        </div>
+        <div class="flex bg-white rounded shadow-2xl hover:transform hover:scale-105 duration-200 ease-in">
+          <div class="w-1/4 py-2 bg-yellow-500 rounded-l text-3xl text-center">😍</div>
+          <div class="p-4">
+            <h5>Cards</h5>
+          </div>
+        </div>
+        <div class="flex bg-white rounded shadow-2xl hover:transform hover:scale-105 duration-200 ease-in">
+          <div class="w-1/4 py-2 bg-green-500 rounded-l text-3xl text-center">😍</div>
+          <div class="p-4">
+            <h5>Forms</h5>
+          </div>
+        </div>
+        <div class="flex bg-white rounded shadow-2xl hover:transform hover:scale-105 duration-200 ease-in">
+          <div class="w-1/4 py-2 bg-pink-500 rounded-l text-3xl text-center">😍</div>
+          <div class="p-4">
+            <h5>Header</h5>
+          </div>
+        </div>
+        <div class="flex bg-white rounded shadow-2xl hover:transform hover:scale-105 duration-200 ease-in">
+          <div class="w-1/4 py-2 bg-purple-500 rounded-l text-3xl text-center">😍</div>
+          <div class="p-4">
+            <h5>Forms</h5>
+          </div>
+        </div>
+        <div class="flex bg-white rounded shadow-2xl hover:transform hover:scale-105 duration-200 ease-in">
+          <div class="w-1/4 py-2 bg-emerald-500 rounded-l text-3xl text-center">😍</div>
+          <div class="p-4">
+            <h5>Header</h5>
+          </div>
+        </div>
+        <div class="flex bg-white rounded shadow-2xl hover:transform hover:scale-105 duration-200 ease-in">
+          <div class="w-1/4 py-2 bg-fuchsia-500 rounded-l text-3xl text-center">😍</div>
+          <div class="p-4">
+            <h5>Button</h5>
+          </div>
+        </div>
+        <div class="flex bg-white rounded shadow-2xl hover:transform hover:scale-105 duration-200 ease-in">
+          <div class="w-1/4 py-2 bg-cyan-500 rounded-l text-3xl text-center">😍</div>
+          <div class="p-4">
+            <h5>Button</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =========================== -->
+  <!-- pricing section ============ -->
+  <!-- =========================== -->
+  <div id="pricing" class="relative py-20 bg-blue-600 text-blue-100">
+    <div class="container mx-auto px-10 flex flex-col lg:flex-row space-y-8 lg:space-x-8 items-center">
+
+      <!-- gray bar for effect -->
+      <div class="absolute h-36 top-0 inset-x-0 bg-gray-300"></div>
+
+      <!-- left box -->
+      <div class="w-full lg:w-1/3 order-2 lg:order-1 text-center lg:text-right text-xl lg:text-2xl space-y-6 mt-20">
+        <p><strong class="font-bold">75 videos</strong> at a smooth pace</p>
+        <p><strong class="font-bold">9.25 hours</strong> of learning +building</p>
+        <p><strong class="font-bold">Source code</strong> and CodePens</p>
+      </div>
+
+      <!-- price box -->
+      <div
+        class="relative w-full lg:w-1/3 space-y-4 mt-10 p-5 order-1 lg:order-2 bg-white border-8 border-purple-800 shadow-3xl rounded transform hover:scale-105 duration-300 text-gray-900 text-center">
+
+        <!-- showoff beam thing -->
+        <div class="absolute top-0 inset-x-0 flex justify-center transform -translate-y-32 space-x-12">
+          <div class="h-16 w-2 rounded-full bg-red-500 transform translate-y-6 -rotate-45"></div>
+          <div class="h-20 w-2 rounded-full bg-yellow-500"></div>
+          <div class="h-16 w-2 rounded-full bg-green-500 transform translate-y-6 rotate-45"></div>
+        </div>
+
+        <p class="text-xl">Start Tailwind <span class="italic">-ing!</span></p>
+        <p class="font-bold text-6xl text-purple-900"><span class="opacity-50">$</span>45</p>
+        <a href="#"
+          class="inline-block w-full py-4 bg-gray-200 border border-gray-700 rounded shadow-lg hover:shadow-2xl font-bold">Buy
+          this Course Gumroad</a>
+      </div>
+
+      <!-- right box -->
+      <div class="w-full lg:w-1/3 order-3 lg:order-3 text-center text-xl lg:text-2xl space-y-6 mt-20">
+        <p>Use the code in <strong class="font-bold">your projects</strong></p>
+        <p>Access to <strong class="font-bold">Discord for support</strong></p>
+        <p>Lifetime <strong class="font-bold">refund guarantee</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================== -->
+  <!-- course modules and FAQ section============ -->
+  <!-- =========================== -->
+  <div class="p-0 lg:p-20 bg-gradient-to-b from-gray-700 to-gray-800 text-gray-400">
+    <!-- =========================== -->
+    <!-- course modules description section ============ -->
+    <!-- =========================== -->
+    <div class="py-10">
+      <div class="container mx-auto px-10 space-y-4 lg:space-y-8 text-center flex-col items-center justify-center">
+        <h3 class="text-3xl lg:text-6xl font-bold text-gray-100">The Modules/Videos</h3>
+        <h4 class="text-2xl text-gray-100">9.25 hours of Tailwind learning in 19 modules/75 videos.</h4>
+        <div class="w-full lg:w-full m-0 p-0 lg:mx-auto flex-col rounded-lg text-md sm:text-lg md:texl-xl lg:text-3xl">
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800">
+            <div>Getting Started</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>6<div class="text-sm ">videos</div></div>
+              <div>33<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800 bg-opacity-75">
+            <div>Main Concepts</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>11<div class="text-sm ">videos</div></div>
+              <div>67<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800">
+            <div>Layout</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>4<div class="text-sm ">videos</div></div>
+              <div>37<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800 bg-opacity-75">
+            <div>Card components</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>3<div class="text-sm ">videos</div></div>
+              <div>32<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800">
+            <div>Form Components</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>3<div class="text-sm ">videos</div></div>
+              <div>35<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800 bg-opacity-75">
+            <div>Building a Course Site</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>6<div class="text-sm ">videos</div></div>
+              <div>42<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800">
+            <div>Header/Nevigation</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>3<div class="text-sm ">videos</div></div>
+              <div>16<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800 bg-opacity-75">
+            <div>Hero Section</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>4<div class="text-sm ">videos</div></div>
+              <div>36<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800">
+            <div>Overview section</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>4<div class="text-sm ">videos</div></div>
+              <div>26<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800 bg-opacity-75">
+            <div>About Me Section</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>3<div class="text-sm ">videos</div></div>
+              <div>17<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800">
+            <div>What You'll Build</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>1<div class="text-sm ">videos</div></div>
+              <div>11<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800 bg-opacity-75">
+            <div>Pricing Section</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>4<div class="text-sm ">videos</div></div>
+              <div>33<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800">
+            <div>FAQ Section</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>1<div class="text-sm ">videos</div></div>
+              <div>6<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800 bg-opacity-75">
+            <div>Footer/Newsletter</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>4<div class="text-sm ">videos</div></div>
+              <div>30<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800">
+            <div>Fixes</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>2<div class="text-sm ">videos</div></div>
+              <div>5<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800 bg-opacity-75">
+            <div>Going Beyond</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>5<div class="text-sm ">videos</div></div>
+              <div>44<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+          <div class="px-4 lg:px-10 py-6 lg:py-8 flex justify-between items-center bg-gray-800">
+            <div>Conclusion</div>
+            <div class="flex space-x-4 lg:space-x-12">
+              <div>2<div class="text-sm ">videos</div></div>
+              <div>5<div class="text-sm ">minutes</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- =========================== -->
+    <!-- FAQ section ============ -->
+    <!-- =========================== -->
+    <div id="faq" class="py-20">
+      <div class="container px-10 mx-auto">
+        <div class="py-8 lg:p-14 text-4xl text-center">Frequently Asked Questions</div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
+          <div class="col-span-1 p-6 border-2 border-gray-500 rounded-lg shadow-lg">
+            <h3 class="pb-3 text-xl text-white">Do I need to know CSS?</h3>
+            <p>This course is aimed at people that have some CSS knowledge and want to learn Tailwind. I do talk through
+              CSS concepts and why we're using certain classes all throughout the course so you don't need to be a CSS
+              expert.</p>
+          </div>
+          <div class="col-span-1 p-6 border-2 border-gray-500 rounded-lg shadow-lg">
+            <h3 class="pb-3 text-xl text-white">Can I use the code in my own projects?</h3>
+            <p>Definitely! All of the code in this course is yours to use in your sites, apps, projects, whatever.</p>
+          </div>
+          <div class="col-span-1 p-6 border-2 border-gray-500 rounded-lg shadow-lg">
+            <h3 class="pb-3 text-xl text-white">What if I don't like it?</h3>
+            <p>I offer a <strong class="font-bold text-blue-500">lifetime refund policy.</strong> If you ever feel like
+              you didn't gain value from this course, then you can request a refund from <a href="#"
+                class="font-bold underline text-blue-500">chris.sev@hey.com.</a></p>
+          </div>
+          <div class="col-span-1 p-6 border-2 border-gray-500 rounded-lg shadow-lg">
+            <h3 class="pb-3 text-xl text-white">How do I login and view the course?</h3>
+            <p>You can login at <span class="text-blue-500">Gumroad.</span> Use the login button in the top right.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================== -->
+  <!-- footer section ============ -->
+  <!-- =========================== -->
+  <div class="Relative pt-36 pb-24 bg-gradient-to-r from-gray-100 to-gray-300">
+
+    <!-- bubble showoff decoration -->
+    <div class="hidden lg:inline-block absolute transform -translate-y-36">
+      <div class="absolute bg-teal-100 w-64 h-64 rounded-full top-0 left-0 opacity-50 "></div>
+      <div class="absolute bg-red-100 w-64 h-64 rounded-full top-0 left-0 opacity-50 ml-20"></div>
+      <div class="absolute bg-purple-100 w-64 h-64 rounded-full top-0 left-0 opacity-50 ml-10 mt-20"></div>
+    </div>
+
+    <!-- Bubble for small screens -->
+    <div class="inline-block lg:hidden absolute transform -translate-y-28 translate-x-4">
+      <div class="absolute bg-teal-300 w-24 h-24 rounded-full top-0 left-0 opacity-25"></div>
+      <div class="absolute bg-red-300 w-24 h-24 rounded-full top-0 left-0 opacity-25 ml-20 transform translate-y-4 translate-x-9"></div>
+      <div class="absolute bg-purple-100 w-20 h-20 rounded-full top-0 left-0 opacity-50 ml-10 mt-20 transform -translate-y-8"></div>
+    </div>
+
+    <div class="relative container px-10 mx-auto">
+      <!-- footer top -->
+      <div class="pb-32 space-y-16 lg:space-y-0 lg:flex border-b border-gray-300">
+        <div class="w-full lg:w-1/2 space-y-6">
+          <div class="w-full bg-clip-text text-transparent bg-gradient-to-r from-teal-500  to-purple-500">
+            <h3 class="text-3xl lg:text-5xl font-bold">Get updates on this course</h3>
+          </div>
+          <form class="w-full h-14 flex">
+            <input type="email" placeholder="super@secret.com"
+              class="w-10/12 h-full pl-4 outline-none border-2 border-r-0 border-gray-400 focus:border-purple-400 rounded-l placeholder-gray-300">
+            <button class="w-24 h-full bg-purple-400 rounded-r text-purple-100">Subscribe</button>
+          </form>
+        </div>
+        <div
+          class="w-full lg:w-1/2 px-8 space-y-8 lg:space-y-0 lg:flex justify-between text-gray-500 text-center lg:text-right">
+          <ul class="space-y-2 lg:space-y-5">
+            <li class="text-lg font-bold uppercase">Company</li>
+            <li class="hover:underline">
+              <a href="#">About</a>
+            </li>
+            <li class="hover:underline">
+              <a href="#">Blog</a>
+            </li>
+            <li class="hover:underline">
+              <a href="#">Careers</a>
+            </li>
+          </ul>
+          <ul class="space-y-2 lg:space-y-5">
+            <li class="text-lg font-bold uppercase">Product</li>
+            <li class="hover:underline">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="hover:underline">
+              <a href="#">Documentation</a>
+            </li>
+            <li class="hover:underline">
+              <a href="#">Guides</a>
+            </li>
+          </ul>
+          <ul class="space-y-2 lg:space-y-5">
+            <li class="text-lg font-bold uppercase">legal Stuff</li>
+            <li class="hover:underline">
+              <a href="#">Terms</a>
+            </li>
+            <li class="hover:underline">
+              <a href="#">Privacy</a>
+            </li>
+            <li class="hover:underline">
+              <a href="#">Rules</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- footer bottom -->
+      <div class="mt-5 lg:flex lg:justify-between text-gray-400 text-center space-y-4 lg:space-y-0">
+        <div>Copyright &copy; 2020-5955 <a href="#" class="hover:underline">Chris Sev</a></div>
+        <ul class="flex justify-between space-x-7">
+          <li>
+            <a href="#" class="hover:underline">Twitter</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Discord</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
